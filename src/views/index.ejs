@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+      ScrollReveal({duration:800})
+    </script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+<!-- <header class="navbar navbar-bright navbar-fixed-top " role="banner">
+  <div class="container ">
+    <div class="navbar-header" >
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand" >Home</a>
+    </div>
+    <nav class="collapse navbar-collapse " role="navigation">
+      <ul class="nav navbar-nav" >
+        <% for(i=0;i<nav.length;i++){%>
+        <li>
+          <a href= <%=nav[i].link%>><%=nav[i].name%></a>
+        </li>
+        <%}%>
+      </ul>
+  
+    </nav>
+  </div>
+</header> -->
+
+<!-- new nav -->
+<nav>
+  <div class="logo">
+      <img src="/images/Ybin.gif"  alt="Logo Image">
+      <a href="/"><h1 class="libhead">Library App</h1></a>
+  </div>
+  <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+  </div>
+  
+  <ul class="nav-links">
+    <li  ><a href="#" class="join-button">Home</a></li>
+      
+      <!-- <li class="nav-link"><a href=""></a></li> -->
+      <!-- <li class="nav-link"><a href="#">Solutions</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact Us</a></li> -->
+      <li><a href="<%=nav[1].link%>" class="login-button"><%=nav[1].name%></a></li>
+      <li><a href="<%=nav[2].link%>" class="login-button" href="#"><%=nav[2].name%></a></li>
+  </ul>
+  
+</nav>
+<!-- new nav end -->
+<div class="hero">
+  <!-- <img src="https://i.postimg.cc/4x12v2cB/triangle-top.png" class="triangle1">
+  <img src="https://i.postimg.cc/WpQyskj6/triangle-left.png" class="triangle2">
+  <img src="https://i.postimg.cc/MZc4kDkp/circle.png" class="circle"> -->
+
+
+
+<div id="masthead" class="p-1">  
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-7">
+        <h1>Book House
+          <p class="lead"></p>
+        </h1>
+      </div> -->
+      <div class="col-md-5">
+        <div class=""> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer1"> </div>
+      </div>
+    </div> 
+  </div>/cont -->
+  
+</div>
+
+<!-- new -->
+<!-- <div class="container" style="margin-top: 20px;">
+  <div class="col-md-12 col-lg-12">
+      <article class="post vt-post">
+          <div class="row">
+              <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                  <div class="post-type post-img">
+                      <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-responsive" alt="image post"></a>
+                  </div>
+                  <div class="author-info author-info-2">
+                      <ul class="list-inline">
+                          <li>
+                              <div class="info">
+                                  <p>Posted on:</p>
+                                  <strong>OCT 09, 2021</strong></div>
+                          </li>
+                          <li>
+                              <div class="info">
+                                  <p>Comments:</p>
+                                  <strong>127</strong></div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
+                  <div class="caption">
+                      <h2 class="md-heading"><a href="#">The Heading Text Size Should Match</a></h2>
+                      <div class="row">
+                        <div class="col-xs-9">
+                          <h4><span class="label label-default " style="margin-left: 10px;">James Cameroon</span></h4><h4>
+                          <small style="font-family:courier,'new courier';margin-left: 10px;" class="text-muted">Genere • </small>
+                          </h4></div>
+                        <div class="col-xs-3"></div>
+                      </div>
+                      <p> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. </p>
+                      <a class="btn btn-default read" href="#" role="button">Read More</a> </div>
+              </div>
+          </div>
+      </article>
+      
+      
+      
+      <article class="post vt-post">
+          <div class="row">
+              <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                  <div class="post-type post-img">
+                      <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-responsive" alt="image post"></a>
+                  </div>
+                  <div class="author-info author-info-2">
+                      <ul class="list-inline">
+                          <li>
+                              <div class="info">
+                                  <p>Posted on:</p>
+                                  <strong>OCT 09, 2021</strong></div>
+                          </li>
+                          <li>
+                              <div class="info">
+                                  <p>Comments:</p>
+                                  <strong>127</strong></div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
+                  <div class="caption">
+                     
+                    
+                     <h3 class="md-heading"><a href="#">The Heading Text Size Should Match</a></h3>
+                     <div class="row">
+                      <div class="col-xs-9">
+                        <h4><span class="label label-default " style="margin-left: 10px;">James Cameroon</span></h4><h4>
+                        <small style="font-family:courier,'new courier';margin-left: 10px;" class="text-muted">Genere • </small>
+                        </h4></div>
+                      <div class="col-xs-3"></div>
+                    </div>
+
+                     <p> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                      <a class="btn btn-default read" href="#" role="button">Read More</a> </div>
+              </div>
+          </div>
+      </article>
+      
+      
+      
+      <article class="post vt-post">
+          <div class="row">
+              <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                  <div class="post-type post-img">
+                      <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="img-responsive" alt="image post"></a>
+                  </div>
+                  <div class="author-info author-info-2">
+                      <ul class="list-inline">
+                          <li>
+                              <div class="info">
+                                  <p>Posted on:</p>
+                                  <strong>OCT 09, 2021</strong></div>
+                          </li>
+                          <li>
+                              <div class="info">
+                                  <p>Comments:</p>
+                                  <strong>127</strong></div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
+                  <div class="caption">
+                      <h3 class="md-heading"><a href="#">The Heading Text Size Should Match</a></h3>
+                      <div class="row">
+                        <div class="col-xs-9">
+                          <h4><span class="label label-default " style="margin-left: 10px;">James Cameroon</span></h4><h4>
+                          <small style="font-family:courier,'new courier';margin-left: 10px;" class="text-muted">Genere • </small>
+                          </h4></div>
+                        <div class="col-xs-3"></div>
+                      </div>
+                      <p> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                      <a class="btn btn-default read" href="#" role="button">Read More</a> </div>
+              </div>
+          </div>
+      </article>
+      <div class="clearfix"></div>
+  </div>
+</div> -->
+
+
+<!-- new end -->
+
+<section>
+  <div class="content">
+      <div class="contentBx">
+          <h2 class="new"><span class="new2">Welcome </span><span class="new3">to the</span> <br>
+           <span class="new4"> Magical World</span> <span class="new5">of Books</span> </h2>
+          <p>Reading a book is like sitting in an autonomous car driving into an unknown paradise
+            You can always read a book tomorrow, but make sure you will have started yesterday.
+            .Think of your future as a list of books you want to read.
+            Life is like a novel, with you being both its author and main character.
+            If you want to focus, start reading a book. If it’s a good book, you won’t be able to focus on anything else.
+            Start reading books, and you will stop complaining about your life. Or the other way around.
+            A book is like a cold drink vending machine on an endless desert of information overload.
+            Reading is like installing a new operating system inside your brain without the need to make a backup.
+          </p>
+          <a href="<%=nav[1].link%>">Get Started</a>
+          <img src="/images/web-design.gif" class="indexsvg animate__animated animate__pulse animate__infinite	animate__slower" width=700px" alt="">
+      </div>
+  </div>
+  <ul class="sci">
+      <li><a href="#"><img src="facebook.png" alt=""></a></li>
+      <li><a href="#"><img src="twitter.png" alt=""></a></li>
+      <li><a href="#"><img src="instagram.png" alt=""></a></li>
+  </ul>
+</section>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container" id="footer">
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline footfa">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right pullfoot">Developed <i class="icon-heart-empty"></i> by <a href="https://www.linkedin.com/in/akhiljptvm/">AKHIL JP</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+     <script>
+     const hamburger = document.querySelector(".hamburger");
+     const navLinks = document.querySelector(".nav-links");
+     const links = document.querySelectorAll(".nav-links li");
+
+ hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
+    </script>
+    <script>
+      ScrollReveal().reveal('.new2')
+      ScrollReveal().reveal('.new3',{delay:1000})
+      ScrollReveal().reveal('.new4',{delay:1300})
+      ScrollReveal().reveal('.new5',{delay:1600})
+      ScrollReveal().reveal('#dateText',{delay:500})
+   
+   </script>
+   
+	</body>
+</html>

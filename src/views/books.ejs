@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">  
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+
+<!-- new nav -->
+<nav>
+  <div class="logo">
+      <img src="/images/Ybin.gif"  alt="Logo Image">
+      <h1 class="libhead">Library App</h1>
+  </div>
+  <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+  </div>
+  
+  <ul class="nav-links">
+    <li ><a href="/" class="login-button">Home</a></li>
+    <li><a href="<%=nav[0].link%>" class="join-button"><%=nav[0].name%></a></li>
+    <li ><a href="<%=nav[3].link%>" class="login-button"><%=nav[3].name%></a></li>
+    <li ><a href="<%=nav[4].link%>" class="login-button"><%=nav[4].name%></a></li>
+   
+      
+      <!-- <li><a href=""></a></li> -->
+      <!-- <li><a href="#">Solutions</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact Us</a></li> -->
+      <!-- <li><a class="login-button" href="<%=nav[1].link%>"><%=nav[1].name%></a></li>
+      <li><a class="join-button" href="#">Signup</a></li> -->
+  </ul>
+  
+</nav>
+<!-- new nav end -->
+
+
+
+<div id="masthead" class="p-1">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>Books
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class=""> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer1"> </div>
+      </div>
+    </div> 
+  </div>/cont -->
+  
+</div>
+
+<!-- new -->
+
+<div class="container" style="margin-top: 20px;">
+  
+  <div class="col-md-12 col-lg-12">
+    <% for(i=0;i<books.length;i++){%>
+      <article class="post vt-post">
+        
+          <div class="row">
+            
+              <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                  <div class="post-type post-img">
+                      <a href="#"><img src="/images/<%=books[i].img%>" class="img-responsive" alt="image post" style="box-shadow: 2px 2px 25px rgb(43, 43, 43);"></a>
+                  </div>
+                  <div class="author-info author-info-2">
+                      <ul class="list-inline">
+                          <li>
+                              <div class="info">
+                                  <p>Posted on:</p>
+                                  <strong>OCT 09, 2021</strong></div>
+                          </li>
+                          <li>
+                              <div class="info">
+                                  <p>Comments:</p>
+                                  <strong>127</strong></div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
+                  <div class="caption">
+                      <h2 class="md-heading"><a href="#"><%=books[i].title%></a></h2>
+                      <div class="row">
+                        <div class="col-xs-9">
+                          <h4><span class="label label-default " style="margin-left: 10px;"><%=books[i].author%></span></h4><h4>
+                          <small style="font-family:courier,'new courier';margin-left: 10px;" class="text-muted"><%=books[i].genre%></small>
+                          </h4></div>
+                        <div class="col-xs-3"></div>
+                      </div>
+                      <p> <%=books[i].shortdis%></p>
+                      <a class="btn btn-default read" href="/books/<%=i%>" role="button">Read More</a> </div>
+                     
+              </div>
+          </div>
+         
+      </article>
+      <%}%>
+      
+      
+      <!-- <article class="post vt-post">
+          <div class="row">
+              <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                  <div class="post-type post-img">
+                      <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-responsive" alt="image post"></a>
+                  </div>
+                  <div class="author-info author-info-2">
+                      <ul class="list-inline">
+                          <li>
+                              <div class="info">
+                                  <p>Posted on:</p>
+                                  <strong>OCT 09, 2021</strong></div>
+                          </li>
+                          <li>
+                              <div class="info">
+                                  <p>Comments:</p>
+                                  <strong>127</strong></div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
+                  <div class="caption">
+                     
+                    
+                     <h3 class="md-heading"><a href="#">The Heading Text Size Should Match</a></h3>
+                     <div class="row">
+                      <div class="col-xs-9">
+                        <h4><span class="label label-default " style="margin-left: 10px;">James Cameroon</span></h4><h4>
+                        <small style="font-family:courier,'new courier';margin-left: 10px;" class="text-muted">Genere • </small>
+                        </h4></div>
+                      <div class="col-xs-3"></div>
+                    </div>
+
+                     <p> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                      <a class="btn btn-default read" href="#" role="button">Read More</a> </div>
+              </div>
+          </div>
+      </article>
+      
+      
+      
+      <!-- <article class="post vt-post">
+          <div class="row">
+              <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                  <div class="post-type post-img">
+                      <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="img-responsive" alt="image post"></a>
+                  </div>
+                  <div class="author-info author-info-2">
+                      <ul class="list-inline">
+                          <li>
+                              <div class="info">
+                                  <p>Posted on:</p>
+                                  <strong>OCT 09, 2021</strong></div>
+                          </li>
+                          <li>
+                              <div class="info">
+                                  <p>Comments:</p>
+                                  <strong>127</strong></div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
+                  <div class="caption">
+                      <h3 class="md-heading"><a href="#">The Heading Text Size Should Match</a></h3>
+                      <div class="row">
+                        <div class="col-xs-9">
+                          <h4><span class="label label-default " style="margin-left: 10px;">James Cameroon</span></h4><h4>
+                          <small style="font-family:courier,'new courier';margin-left: 10px;" class="text-muted">Genere • </small>
+                          </h4></div>
+                        <div class="col-xs-3"></div>
+                      </div>
+                      <p> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                      <a class="btn btn-default read" href="#" role="button">Read More</a> </div>
+              </div>
+          </div>
+      </article>
+      <div class="clearfix"></div>-->
+  </div>
+</div> 
+
+
+<!-- new end -->
+
+
+
+<!-- <div class="container" id="footer">
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      
+    </div>
+  </div>
+</div> -->
+
+<hr>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Developed <i class="icon-heart-empty"></i> by <a href="https://www.linkedin.com/in/akhiljptvm/">AKHIL JP</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+     <script>
+     const hamburger = document.querySelector(".hamburger");
+     const navLinks = document.querySelector(".nav-links");
+     const links = document.querySelectorAll(".nav-links li");
+
+ hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
+    </script>
+	</body>
+</html>

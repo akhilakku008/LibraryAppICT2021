@@ -1,0 +1,65 @@
+form{
+    width: 44rem;
+    height:70rem;
+    background-color: #0000008a;
+    margin-left: 50rem;
+    align-items: center;
+    border-radius: 20px;
+    padding: 50px;
+    
+}
+form .form-group{
+    width: 20rem;
+    align-items: center;
+    margin-left: 48px;
+    /* padding: 1px; */
+}
+form .form-group input{
+    width: 25rem;
+    
+}
+form label{
+    color: rgb(255, 255, 255);
+}
+form #nameErr,#genreErr,#book1Err,#book2Err,#book3Err,#imgErr{
+    color: rgb(247, 91, 91);
+}
+form #submit{
+    width: 20rem;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px){
+    form{
+        width: 90vw;
+        height:70rem;
+        background-color: #000000c2;
+        margin-left: 20px;
+        align-items: center;
+        border-radius: 20px;
+        padding: 50px;
+        
+    }
+    form .form-group{
+        width: 20rem;
+        align-items: center;
+        margin-left: 10px;
+        /* padding: 1px; */
+    }
+    form .form-group input{
+        width: 25rem;
+        
+    }
+    form label{
+        color: rgb(255, 255, 255);
+    }
+    form #nameErr,#genreErr,#book1Err,#book2Err,#book3Err,#imgErr{
+        color: rgb(247, 91, 91);
+    }
+    form #submit{
+        width: 20rem;
+        margin-left: 30px;
+        margin-top: 30px;
+    } 
+}

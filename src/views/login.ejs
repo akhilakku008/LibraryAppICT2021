@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/login_script.js"></script>
+        <link rel="stylesheet" href="css/loginstyle.css">
+        <link href="css/styles.css" rel="stylesheet">
+    
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+	</head>
+	<body background="images/glenn2.jpg">
+
+<!-- new nav -->
+<nav>
+  <div class="logo">
+      <img src="/images/Ybin.gif"  alt="Logo Image">
+      <a href="/"><h1 class="libhead">Library App</h1></a>
+  </div>
+  <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+  </div>
+  
+  <ul class="nav-links">
+    <li><a href="/" class="login-button">Home</a></li>
+      
+      <!-- <li><a href="<%=nav[0].link%>"><%=nav[0].name%> </a></li>
+      <li><a href="<%=nav[3].link%>"><%=nav[3].name%> </a></li> -->
+      
+     <!-- <li><a href="#">Products</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact Us</a></li> -->
+      <li><a href="<%=nav[1].link%>" class="join-button"><%=nav[1].name%></a></li>
+      <li><a href="<%=nav[2].link%>" class="login-button"><%=nav[2].name%></a></li>
+      
+      
+      <!-- <li><a href="" class="join-button" href="#">Signup</a></li> -->
+  </ul>
+  
+</nav>
+<!-- new nav end -->
+
+
+
+<div id="masthead" class="p-1">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class=""> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+  
+</div>
+
+<div class="login-box mt-2">
+    <h2 class="p-3">LOGIN</h2>
+    <form action="<%=nav[0].link%>" onsubmit="return Validate()">
+      <div class="user-box">
+        <input type="text" id="username" name="" required oninput="Typing()">
+        <label>Username</label>
+      </div>
+      
+      <br>
+      
+      <div class="user-box">
+        <input type="password" name="password" id="password" required name=""  class="form__input" oninput="Typing()" >
+        <!-- <i class="bi bi-eye-slash" id="togglePassword"></i> -->
+        <span class="icon"></span>
+        <label>Password</label>
+        <label for="error" id="error" hidden></label>
+      </div>
+      
+
+      <button type="submit" id="btnfn">
+        <!-- <a href="#" type="submit"> -->
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        <!-- </a> -->
+
+      </button>
+      <br>
+      <label for="hintlabel" style="margin-top: 15px;margin-left: 18%">User:admin | password:12345</label>
+      
+    </form>
+  </div>
+
+
+
+
+
+
+
+
+
+<footer  style="margin-top: 60rem;">
+  <div class="container v-100">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline footfa">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right pullfoot">Developed <i class="icon-heart-empty"></i> by <a href="https://www.linkedin.com/in/akhiljptvm/">AKHIL JP</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+     <script>
+     const hamburger = document.querySelector(".hamburger");
+     const navLinks = document.querySelector(".nav-links");
+     const links = document.querySelectorAll(".nav-links li");
+
+ hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
+    </script>
+	</body>
+</html>
